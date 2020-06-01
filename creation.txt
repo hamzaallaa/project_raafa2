@@ -1,0 +1,87 @@
+create database ÇáÌãÚíÉ_ÇáÑÃİÉ_2020;
+
+
+
+create table Beneficiaire_2020(
+ ÇáÑŞã int identity,
+[code masar] varchar(50) primary key,
+ [nom prenom] varchar(50),
+ [ÇáÇÓã ÇáäÓÈ] varchar(50),
+[ÚäæÇä] varchar(50),
+cin varchar(50),
+[date naisance] date,
+ÚãÑ varchar(50),
+ÇáÌäÓ varchar(50),
+[ÊÇÑíÎ ÇáÇáÊÍÇŞ ÈÇáãÄÓÓÉ] date,
+[parcour scolair] varchar(50),
+[niveau scolair] varchar(50),
+)
+
+
+create table Social_2020
+(
+[code_masar]  varchar(50) primary key,
+ [íÊíã áÇÈ] varchar(10),
+[íÊíã ÇáÇã] varchar(10),
+[íÊíã ÇáÇÈæíä] varchar(10),
+[ãÌåæá ÇáÇÈæíä] varchar(10),
+[ãÌåæá ÇáÇÈ] varchar(10),
+[ÍÇáÉ ØáÇŞ] varchar(10),
+[ÓÌä ÇÍÏ ÇáÇÈæíä] varchar(10),
+[ãÊÎáì Úäå] varchar(10),
+[ÖÚíİ] varchar(10),
+[ÍÇáÇÊ ÇÎÑì] varchar(10)
+)
+
+
+
+create table Scolair_2020
+(
+ÇáãÌãæÚ varchar(10),
+[ÇáãŞíãíä ÈÏæä ÊãÏÑÓ Ãæ Êßæíä] varchar(10),
+[ÇáÊßæíä Çáãåäí Çæ ÇáÍÑİí] varchar(10),
+[ÇáÇæáì ËÇäæí] varchar(10),
+[ÊÇäí ËÇäæí] varchar(10),
+[ËÇáÊ ËÇäæí] varchar(10),
+[ÇáÇæáì ÇÚÏÇÏí] varchar(10),
+[ÊÇäí ÇÚÏÇÏí] varchar(10),
+[ËÇáÊ ÇÚÏÇÏí] varchar(10),
+[ÇáÇæáì ÇáÇÈÊÏÇÆí] varchar(10),
+[ÇáÊÇäí ÇáÇÈÊÏÇÆí] varchar(10),
+[ÇáËÇáÊ ÇáÇÈÊÏÇÆí] varchar(10),
+[ÇáÑÇÈÚ ÇáÇÈÊÏÇÆí] varchar(10),
+[ÇáÎÇãÓ ÇáÇÈÊÏÇÆí] varchar(10),
+[ÇáÓÇÏÓ ÇáÇÈÊÏÇÆí] varchar(10),
+)
+
+
+
+create table groupe_age_2020
+(
+ÇáãÌãæÚ varchar(10),
+[ÇßÊÑ ãä 12ÓäÉ ÇäÇË] varchar(10),
+[ÇŞá ãä 12ÓäÉ ÇäÇË] varchar(10),
+[ÇßÊÑ_ãä 12ÓäÉ ÏßæÑ] varchar(10),
+[ÇŞá_ãä 12ÓäÉ ÏßæÑ] varchar(10),
+
+)
+
+
+create table Statistiques_2020
+(
+ÇáãÌãæÚ varchar(10),
+[ãÓÊæì ÇÌÊãÇÚí ÖÚíİ] varchar(10),
+[ÍÇáÉ ÇáÇÌÊãÇÚíÉ] varchar(10),
+[íÊíã ÇáÇÈæíä] varchar(10),
+[íÊíã ÇáÇã] varchar(10),
+[íÊíÊã ÇáÇÈ] varchar(10),
+)
+
+
+
+
+
+
+
+
+

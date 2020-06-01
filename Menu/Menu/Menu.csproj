@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{922D8D85-3AA6-4740-B4EB-6A77F4B34423}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Menu</RootNamespace>
+    <AssemblyName>Menu</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v18.1.Core, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v18.1.Core, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v18.1.Core, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="affich_etat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="affich_etat.Designer.cs">
+      <DependentUpon>affich_etat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReport3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport4.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport4.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crystal_etat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="crystal_etat.Designer.cs">
+      <DependentUpon>crystal_etat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="data1.cs" />
+    <Compile Include="crystal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="crystal.Designer.cs">
+      <DependentUpon>crystal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rechercher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rechercher.Designer.cs">
+      <DependentUpon>rechercher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login1.Designer.cs">
+      <DependentUpon>login1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_inscription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_inscription.Designer.cs">
+      <DependentUpon>form_inscription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inscription_etat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inscription_etat.Designer.cs">
+      <DependentUpon>inscription_etat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inscription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inscription.Designer.cs">
+      <DependentUpon>inscription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu1.Designer.cs">
+      <DependentUpon>menu1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login0.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login0.Designer.cs">
+      <DependentUpon>login0.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\ajot_prsn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\ajot_prsn.Designer.cs">
+      <DependentUpon>ajot_prsn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\Ajouter_emp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\Ajouter_emp.Designer.cs">
+      <DependentUpon>Ajouter_emp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="statistique.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="statistique.Designer.cs">
+      <DependentUpon>statistique.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="affich_etat.resx">
+      <DependentUpon>affich_etat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport3.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crystal.resx">
+      <DependentUpon>crystal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport4.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport4.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crystal_etat.resx">
+      <DependentUpon>crystal_etat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rechercher.resx">
+      <DependentUpon>rechercher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login1.resx">
+      <DependentUpon>login1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_inscription.resx">
+      <DependentUpon>form_inscription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inscription_etat.resx">
+      <DependentUpon>inscription_etat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inscription.resx">
+      <DependentUpon>inscription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu1.resx">
+      <DependentUpon>menu1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login0.resx">
+      <DependentUpon>login0.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\ajot_prsn.resx">
+      <DependentUpon>ajot_prsn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\Ajouter_emp.resx">
+      <DependentUpon>Ajouter_emp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="statistique.resx">
+      <DependentUpon>statistique.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lvl220151223073444-jpg-64744150180052863.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\famille-icon-paternite-pere-mere-et-enfant-icon-dans-l-illustration-vectorielle-400-72463761.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\43753.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-mignon-linéaire-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-recherche-payante-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-modifier-la-propriété-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-supprimer-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\437531.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-envoyer-la-liste-d%27emploi-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User_icon_2.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11_104884.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close-window-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-envoyer-à-l%27imprimante-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
